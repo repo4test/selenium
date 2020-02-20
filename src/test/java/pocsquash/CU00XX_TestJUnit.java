@@ -33,7 +33,7 @@ public class CU00XX_TestJUnit {
         ChromeOptions options = new ChromeOptions();
         options.addArguments("headless", "--disable-gpu", "--window-size=1920,1200", "--ignore-certificate-errors");
 
-        driver = new ChromeDriver(options);
+        driver = new ChromeDriver();
 
         driver.navigate().to("https://www.google.com/");
         driver.manage().window().maximize();
